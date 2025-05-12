@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #66fcf1; /*primary for buttons, links, highlights*/
+  --color-secondary: #c5c6c7; /* secondary for subtitles, labels, hover effects */
+  --color-main-background: #0b0c10;
+  --color-card-or-section-background: #1f2833;
+}
