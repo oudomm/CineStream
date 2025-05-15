@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watchlist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+
+<header>
+  <div class="text-center py-6">
+    <h1 class="text-2xl font-bold">🔖 My Lists</h1>
+  </div>
+</header>  
+  <div class="flex justify-center space-x-6 text-lg border-b border-gray-700 pb-2 mb-4">
+    <button id="tab-watchlist" onclick="showTab('watchlist')" class="tab-btn text-orange-500 border-b-2 border-orange-500 ">WATCHLIST</button>
+    <button id="tab-crunchylists" onclick="showTab('crunchylists')" class="tab-btn hover:text-orange-400">CRUNCHYLISTS</button>
+    <button id="tab-history" onclick="showTab('history')" class="tab-btn hover:text-orange-400">HISTORY</button>
+  </div>
+
+  <!-- Watchlist -->
+  <div id="content-watchlist" class="tab-content">
+    <div class="flex justify-end px-10 space-x-4 mb-6">
+      <button class="flex items-center gap-2 hover:text-orange-400"><i class="fas fa-bars"></i> Recent Activity</button>
+      <button class="flex items-center gap-2 hover:text-orange-400"><i class="fas fa-filter"></i> Filter</button>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-6">
+      <div class="bg-gray-900 rounded-lg p-2">
+        <img src="/public/images/record-of-lodoss-war.jpeg" class="rounded" alt="Thumbnail">
+        <div class="mt-2">
+          <h2 class="font-semibold text-sm">Record of Lodoss War</h2>
+          <p class="text-xs text-gray-400">Continue: S4 E3</p>
+          <p class="text-xs text-orange-400 mt-1">Series • Sub | Dub</p>
+          <div class="flex items-center space-x-3 mt-2 text-lg">
+            <button class="hover:text-orange-400"><i class="far fa-heart"></i></button>
+            <button class="hover:text-red-500"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+       <!-- card 2 -->
+    <div class="bg-gray-900 rounded-lg p-2">
+      <img src="/public/images/onepiece.jpeg" class="rounded" alt="Thumbnail">
+      <div class="mt-2">
+        <h2 class="font-semibold text-sm">Record of Lodoss War</h2>
+        <p class="text-xs text-gray-400">Continue: S4 E3</p>
+        <p class="text-xs text-orange-400 mt-1">Series • Sub | Dub</p>
+        <div class="flex items-center space-x-3 mt-2 text-lg">
+          <button class="hover:text-orange-400"><i class="far fa-heart"></i></button>
+          <button class="hover:text-red-500"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- card 3 -->
+    <div class="bg-gray-900 rounded-lg p-2">
+      <img src="/public/images/cardcaptor.jpeg" class="rounded" alt="Thumbnail">
+      <div class="mt-2">
+        <h2 class="font-semibold text-sm">Record of Lodoss War</h2>
+        <p class="text-xs text-gray-400">Continue: S4 E3</p>
+        <p class="text-xs text-orange-400 mt-1">Series • Sub | Dub</p>
+        <div class="flex items-center space-x-3 mt-2 text-lg">
+          <button class="hover:text-orange-400"><i class="far fa-heart"></i></button>
+          <button class="hover:text-red-500"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- card 4 -->
+    <div class="bg-gray-900 rounded-lg p-2">
+      <img src="/public/images/a-centaur's life.avif" class="rounded" alt="Thumbnail">
+      <div class="mt-2">
+        <h2 class="font-semibold text-sm">Record of Lodoss War</h2>
+        <p class="text-xs text-gray-400">Continue: S4 E3</p>
+        <p class="text-xs text-orange-400 mt-1">Series • Sub | Dub</p>
+        <div class="flex items-center space-x-3 mt-2 text-lg">
+          <button class="hover:text-orange-400"><i class="far fa-heart"></i></button>
+          <button class="hover:text-red-500"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- card 5 -->
+    <div class="bg-gray-900 rounded-lg p-2">
+      <img src="/public/images/chainsaw-man.jpeg" class="rounded" alt="Thumbnail">
+      <div class="mt-2">
+        <h2 class="font-semibold text-sm">Record of Lodoss War</h2>
+        <p class="text-xs text-gray-400">Continue: S4 E3</p>
+        <p class="text-xs text-orange-400 mt-1">Series • Sub | Dub</p>
+        <div class="flex items-center space-x-3 mt-2 text-lg">
+          <button class="hover:text-orange-400"><i class="far fa-heart"></i></button>
+          <button class="hover:text-red-500"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-lg p-2">
+      <img src="/public/images/tokyo-ghoul.avif" class="rounded" alt="Thumbnail">
+      <div class="mt-2">
+        <h2 class="font-semibold text-sm">Record of Lodoss War</h2>
+        <p class="text-xs text-gray-400">Continue: S4 E3</p>
+        <p class="text-xs text-orange-400 mt-1">Series • Sub | Dub</p>
+        <div class="flex items-center space-x-3 mt-2 text-lg">
+          <button class="hover:text-orange-400"><i class="far fa-heart"></i></button>
+          <button class="hover:text-red-500"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-lg p-2">
+      <img src="/public/images/jojo's bizarre.avif" class="rounded" alt="Thumbnail">
+      <div class="mt-2">
+        <h2 class="font-semibold text-sm">Record of Lodoss War</h2>
+        <p class="text-xs text-gray-400">Continue: S4 E3</p>
+        <p class="text-xs text-orange-400 mt-1">Series • Sub | Dub</p>
+        <div class="flex items-center space-x-3 mt-2 text-lg">
+          <button class="hover:text-orange-400"><i class="far fa-heart"></i></button>
+          <button class="hover:text-red-500"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-lg p-2">
+      <img src="/public/images/ranking-of-kings.avif" class="rounded" alt="Thumbnail">
+      <div class="mt-2">
+        <h2 class="font-semibold text-sm">Record of Lodoss War</h2>
+        <p class="text-xs text-gray-400">Continue: S4 E3</p>
+        <p class="text-xs text-orange-400 mt-1">Series • Sub | Dub</p>
+        <div class="flex items-center space-x-3 mt-2 text-lg">
+          <button class="hover:text-orange-400"><i class="far fa-heart"></i></button>
+          <button class="hover:text-red-500"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="content-crunchylists" class="tab-content hidden text-center py-10 text-gray-300">
+    <p>Your Crunchylists content goes here...</p>
+  </div>
+
+  <div id="content-history" class="tab-content hidden text-center py-10 text-gray-300">
+    <p>Your watch history will show here...</p>
+  </div>
+
+  <script>
+    function showTab(tab) {
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('text-orange-500', 'border-b-2', 'border-orange-500');
+      });
+      document.getElementById(`content-${tab}`).classList.remove('hidden');
+      document.getElementById(`tab-${tab}`).classList.add('text-orange-500', 'border-b-2', 'border-orange-500');
+    }
+  </script>
+
+</body>
+</html>
