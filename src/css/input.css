@@ -5,4 +5,13 @@
   --color-secondary: #c5c6c7; /* secondary for subtitles, labels, hover effects */
   --color-main-background: #0b0c10;
   --color-card-or-section-background: #1f2833;
+  
+  --text-btn-txt: 14px;
+  --text-heading: 40px;
+  --text-subheading: 36px;
+  --text-txt20: 20px;
+  --text-txt18: 18px;
+  --text-txt16: 16px;
+  --text-txt14: 14px;
+  --text-txt12: 12px;
 }
