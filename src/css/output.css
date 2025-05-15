@@ -49,6 +49,7 @@
     --text-btn-txt: 14px;
     --text-subheading: 36px;
     --text-txt20: 20px;
+    --text-txt18: 18px;
     --text-txt16: 16px;
   }
 }
@@ -249,11 +250,17 @@
   .m-10 {
     margin: calc(var(--spacing) * 10);
   }
+  .m-20 {
+    margin: calc(var(--spacing) * 20);
+  }
   .m-auto {
     margin: auto;
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
+  }
+  .my-20 {
+    margin-block: calc(var(--spacing) * 20);
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
@@ -345,6 +352,9 @@
   .w-\[30\%\] {
     width: 30%;
   }
+  .w-\[40\%\] {
+    width: 40%;
+  }
   .w-\[50\%\] {
     width: 50%;
   }
@@ -375,8 +385,14 @@
   .w-\[100w\] {
     width: 100w;
   }
+  .w-\[400px\] {
+    width: 400px;
+  }
   .w-\[400vw\] {
     width: 400vw;
+  }
+  .w-\[600px\] {
+    width: 600px;
   }
   .w-\[1440px\] {
     width: 1440px;
@@ -462,6 +478,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -674,6 +693,9 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -734,6 +756,9 @@
   }
   .text-txt16 {
     font-size: var(--text-txt16);
+  }
+  .text-txt18 {
+    font-size: var(--text-txt18);
   }
   .text-txt20 {
     font-size: var(--text-txt20);
