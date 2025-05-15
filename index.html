@@ -9,7 +9,7 @@
   <body class="bg-black">
     <header class="w-full min-w-80 sticky top-0 z-10">
       <section
-        class="w-full md:block hidden section1 bg-white/90 backdrop-blur-[80px] border border-white/20"
+        class="w-full md:block hidden section1 bg-main-background text-white backdrop-blur-[80px] border border-white/20"
       >
         <nav class="w-[90%] p-5 m-auto flex items-center">
           <div class="w-[20%]">
@@ -63,28 +63,28 @@
               >
             </li>
             <li>
-              <a href=""
-                ><button class="bg-primary px-8 py-3 rounded-md">
-                  Login
-                </button></a
+              <a
+                href="./src/pages/login.html"
+                class="bg-primary text-black px-8 py-3 rounded-md"
+                >Login</a
               >
             </li>
             <li>
-              <a href=""
-                ><button class="bg-primary px-8 py-3 rounded-md">
-                  Register
-                </button></a
+              <a
+                href="./src/pages/signup.html"
+                class="bg-primary text-black px-8 py-3 rounded-md"
+                >Signup</a
               >
             </li>
           </ul>
         </nav>
       </section>
       <section
-        class="w-full block md:hidden section2 bg-white/90 backdrop-blur-[80px] border border-white/20"
+        class="w-full block md:hidden section2 bg-main-background text-white backdrop-blur-[80px] border border-white/20"
       >
         <nav class="w-[90%] p-5 m-auto flex items-center justify-between">
           <div>
-            <img class="w-[100px]" src="/img/Logo (1).png" alt="" srcset="" />
+            <img class="w-[100px]" src="/img/Logo (1).png" alt="Logo" />
           </div>
           <div>
             <svg
@@ -126,21 +126,21 @@
           >
             <li>
               <a
-                href=""
+                href="#"
                 class="hover:underline hover:underline-offset-3 active:text-primary"
                 >Home Page</a
               >
             </li>
             <li>
               <a
-                href=""
+                href="./src/pages/Explorepage.html"
                 class="hover:underline hover:underline-offset-3 active:text-primary"
                 >Explore Movies</a
               >
             </li>
             <li>
               <a
-                href=""
+                href="./src/pages/detail-page.html"
                 class="hover:underline hover:underline-offset-3 active:text-primary"
               >
                 Movie Details</a
@@ -156,28 +156,28 @@
             </li>
             <li>
               <a
-                href=""
+                href="./src/pages/Rating&Review.html"
                 class="hover:underline hover:underline-offset-3 active:text-primary"
                 >Reviews & Ratings</a
               >
             </li>
             <li>
               <a
-                href=""
+                href="./src/pages/about.html"
                 class="hover:underline hover:underline-offset-3 active:text-primary"
                 >About us</a
               >
             </li>
             <li>
-              <a href=""
-                ><button class="bg-primary px-8 py-3 rounded-md m-5 ml-0">
-                  Login
-                </button></a
+              <a
+                href="./src/pages/login.html"
+                class="bg-primary px-8 py-3 rounded-md m-5 ml-0"
+                >Login</a
               >
-              <a href=""
-                ><button class="bg-primary px-8 py-3 rounded-md">
-                  Register
-                </button></a
+              <a
+                href="./src/pages/signup.html"
+                class="bg-primary px-8 py-3 rounded-md"
+                >Signup</a
               >
             </li>
           </ul>
@@ -1612,7 +1612,9 @@
         </div>
       </section>
     </main>
-    <footer class="text-white font-sans min-w-80 text-txt20">
+    <footer
+      class="bg-card-or-section-background text-white font-sans min-w-80 text-txt20"
+    >
       <!-- Top Bar -->
       <div
         class="bg-primary px-6 py-4 flex flex-col md:flex-row items-center justify-between"
@@ -1638,17 +1640,11 @@
       </div>
 
       <!-- Main Footer -->
-      <div
-        class="bg-gradient-to-r from-[#401010] to-[#2d1a1a] px-6 md:px-16 py-10"
-      >
+      <div class="px-6 md:px-16 py-10">
         <div class="grid grid-cols-1 md:grid-cols-5 gap-8 text-sm">
           <!-- Logo and Intro -->
           <div class="md:col-span-1">
-            <div class="flex items-center space-x-1 mb-4">
-              <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
-              <div class="w-3 h-3 rounded-full bg-orange-400"></div>
-              <div class="w-3 h-3 rounded-full bg-red-600"></div>
-            </div>
+            <a href="#"><img src="./img/Logo (1).png" alt="Logo" /></a>
             <h2 class="font-bold mb-2 text-txt20">Watch us right here</h2>
             <p class="text-gray-300 text-txt16">
               Hi! My name is cenime manager and I’m an expert in providing
