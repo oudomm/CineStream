@@ -1,85 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Explore Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-gray-100 min-h-screen">
-  <section
-        class="w-full md:block hidden section1 bg-gray-500 backdrop-blur-[80px] border border-white/20"
-      >
-        <nav class="w-[90%] p-5 m-auto flex items-center">
-          <div class="w-[20%]">
-            <img class="w-[70%]" src="/img/Logo (1).png" alt="" srcset="" />
-          </div>
-          <ul
-            class="w-[80%] flex justify-between xl:text-txt20 items-center gap-2 text-txt16"
-          >
-            <li>
-              <a
-                href=""
-                class="hover:underline hover:underline-offset-3 active:text-primary"
-                >Home Page</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:underline hover:underline-offset-3 active:text-primary"
-                >Explore Movies</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:underline hover:underline-offset-3 active:text-primary"
-              >
-                Movie Details</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:underline hover:underline-offset-3 active:text-primary"
-              >
-                Watchlist</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:underline hover:underline-offset-3 active:text-primary"
-                >Reviews & Ratings</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:underline hover:underline-offset-3 active:text-primary"
-                >About us</a
-              >
-            </li>
-            <li>
-              <a href=""
-                ><button class="bg-primary px-8 py-3 rounded-md">
-                  Login
-                </button></a
-              >
-            </li>
-            <li>
-              <a href=""
-                ><button class="bg-primary px-8 py-3 rounded-md">
-                  Register
-                </button></a
-              >
-            </li>
-          </ul>
-        </nav>
-      </section>
 
-  <button id="sidebar-toggle" class="fixed top-4 left-4 z-50 p-2 bg-slate-800 border border-slate-700 rounded-md lg:hidden">
+<body class="bg-slate-900 text-gray-100 min-h-screen">
+  <section class="top-0 fixed z-50 w-full md:block hidden section1 bg-gray-500 backdrop-blur-[80px] border border-white/20">
+    <nav class="w-[90%] p-5 m-auto flex items-center">
+      <div class="w-[20%]">
+        <img class="w-[70%]" src="/img/Logo (1).png" alt="" srcset="" />
+      </div>
+      <ul class="w-[80%] flex justify-between xl:text-txt20 items-center gap-2 text-txt16">
+        <li>
+          <a href="" class="hover:underline hover:underline-offset-3 active:text-primary">Home Page</a>
+        </li>
+        <li>
+          <a href="" class="hover:underline hover:underline-offset-3 active:text-primary">Explore Movies</a>
+        </li>
+        <li>
+          <a href="" class="hover:underline hover:underline-offset-3 active:text-primary">
+            Movie Details</a>
+        </li>
+        <li>
+          <a href="" class="hover:underline hover:underline-offset-3 active:text-primary">
+            Watchlist</a>
+        </li>
+        <li>
+          <a href="" class="hover:underline hover:underline-offset-3 active:text-primary">Reviews & Ratings</a>
+        </li>
+        <li>
+          <a href="" class="hover:underline hover:underline-offset-3 active:text-primary">About us</a>
+        </li>
+        <li>
+          <a href=""><button class="bg-primary px-8 py-3 rounded-md">
+              Login
+            </button></a>
+        </li>
+        <li>
+          <a href=""><button class="bg-primary px-8 py-3 rounded-md">
+              Register
+            </button></a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <button id="sidebar-toggle"
+    class="fixed top-4 left-4 z-50 p-2 bg-slate-800 border border-slate-700 rounded-md lg:hidden">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
@@ -87,7 +58,8 @@
   </button>
 
 
-  <aside id="default-sidebar" class="fixed top-0 left-0 w-60 h-screen bg-slate-800 border-r border-slate-700 overflow-y-auto z-40 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
+  <aside id="default-sidebar"
+    class="fixed top-10 mt-10 left-0 w-60 h-screen bg-slate-800 border-r border-slate-700 overflow-y-auto z-40 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
     <div class="p-4">
       <h2 class="text-xl font-semibold pb-3 mb-3 border-b border-slate-700">Filters</h2>
 
@@ -96,31 +68,36 @@
         <ul class="space-y-2">
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               Action
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               Comedy
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               Drama
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               Horror
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               Sci-Fi
             </label>
           </li>
@@ -132,105 +109,120 @@
         <ul class="space-y-2">
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               2025
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               2024
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               2023
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               2022
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               2021
             </label>
           </li>
         </ul>
       </div>
-      
+
       <!-- Rating Filter -->
       <div class="mb-6">
         <h3 class="font-semibold mb-2">Rating</h3>
         <ul class="space-y-2">
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               <span class="text-yellow-400">★★★★★</span>
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               <span class="text-yellow-400">★★★★</span><span class="text-gray-600">★</span>
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               <span class="text-yellow-400">★★★</span><span class="text-gray-600">★★</span>
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               <span class="text-yellow-400">★★</span><span class="text-gray-600">★★★</span>
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               <span class="text-yellow-400">★</span><span class="text-gray-600">★★★★</span>
             </label>
           </li>
         </ul>
       </div>
-      
- 
+
+
       <div class="mb-6">
         <h3 class="font-semibold mb-2">Language</h3>
         <ul class="space-y-2">
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               English
             </label>
           </li>
           <li>
             <label class="flex items-center text-gray-400 cursor-pointer hover:text-gray-200">
-              <input type="checkbox" class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
+              <input type="checkbox"
+                class="mr-2 rounded bg-slate-700 border-slate-600 text-blue-500 focus:ring-blue-600">
               Japanese
             </label>
           </li>
         </ul>
       </div>
-      
 
-      <button class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md transition duration-200">
+
+      <button
+        class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md transition duration-200">
         Apply Filters
       </button>
     </div>
   </aside>
 
-  <main class="lg:ml-60 p-6">
+  <main class="lg:ml-60 p-6 mt-36">
 
     <div class="flex flex-col sm:flex-row gap-4 mb-6">
-      <input type="text" placeholder="Search..." class="flex-1 p-3 bg-slate-800 border border-slate-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
-      <select class="p-3 bg-slate-800 border border-slate-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <input type="text" placeholder="Search..."
+        class="flex-1 p-3 bg-slate-800 border border-slate-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <select
+        class="p-3 bg-slate-800 border border-slate-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
         <option value="">Sort by</option>
         <option value="newest">Newest</option>
         <option value="oldest">Oldest</option>
@@ -238,12 +230,12 @@
         <option value="popularity">Popularity</option>
       </select>
     </div>
-    
+
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6">
 
       <div class="bg-slate-800 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl">
-        <img src="/placeholder.svg?height=300&width=200" alt="Hellworld II" class="w-full aspect-[2/3] object-cover">
+        <img src="https://i.pinimg.com/736x/78/f0/2e/78f02e6a0ae0e2e86316224de52cd8df.jpg" alt="Hellworld II" class="w-full aspect-[2/3] object-cover">
         <div class="p-3">
           <h3 class="font-semibold text-sm truncate">Hellworld II</h3>
           <p class="text-xs text-gray-400">2024 • RPG • 4.8★</p>
@@ -251,43 +243,58 @@
       </div>
 
       <div class="bg-slate-800 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl">
-        <img src="/placeholder.svg?height=300&width=200" alt="Hellworld II" class="w-full aspect-[2/3] object-cover">
+        <img src="https://i.pinimg.com/736x/c4/eb/ba/c4ebba51f9884760922dcfd095bada40.jpg" alt="Hellworld II" class="w-full aspect-[2/3] object-cover">
         <div class="p-3">
           <h3 class="font-semibold text-sm truncate">Hellworld II</h3>
           <p class="text-xs text-gray-400">2024 • RPG • 4.8★</p>
         </div>
       </div>
-      
+
 
       <div class="bg-slate-800 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl">
-        <img src="/placeholder.svg?height=300&width=200" alt="Anime Fighter" class="w-full aspect-[2/3] object-cover">
+        <img src="https://i.pinimg.com/736x/e0/f7/dc/e0f7dcc1f0a9657da69ab63c598624eb.jpg" alt="Anime Fighter" class="w-full aspect-[2/3] object-cover">
         <div class="p-3">
           <h3 class="font-semibold text-sm truncate">Anime Fighter</h3>
           <p class="text-xs text-gray-400">2023 • Action • 4.5★</p>
         </div>
       </div>
-      
+
 
       <div class="bg-slate-800 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl">
-        <img src="/placeholder.svg?height=300&width=200" alt="Magic Quest" class="w-full aspect-[2/3] object-cover">
+        <img src="https://i.pinimg.com/736x/31/12/1d/31121d2058a5aa4da918d4eca3aec39f.jpg" alt="Magic Quest" class="w-full aspect-[2/3] object-cover">
         <div class="p-3">
           <h3 class="font-semibold text-sm truncate">Magic Quest</h3>
           <p class="text-xs text-gray-400">2024 • Adventure • 4.2★</p>
         </div>
       </div>
-      
+
 
       <div class="bg-slate-800 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl">
-        <img src="/placeholder.svg?height=300&width=200" alt="Guilty Gear" class="w-full aspect-[2/3] object-cover">
+        <img src="https://i.pinimg.com/736x/28/9d/14/289d1431bdf0a87b7ac5b4f5810b6079.jpg" alt="Guilty Gear" class="w-full aspect-[2/3] object-cover">
         <div class="p-3">
           <h3 class="font-semibold text-sm truncate">Guilty Gear</h3>
           <p class="text-xs text-gray-400">2023 • Fighting • 4.9★</p>
         </div>
       </div>
-      
+
 
       <div class="bg-slate-800 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl">
-        <img src="/placeholder.svg?height=300&width=200" alt="Guilty Gear" class="w-full aspect-[2/3] object-cover">
+        <img src="https://i.pinimg.com/736x/b2/dd/6a/b2dd6ad57a15bf8e8867211f49f3d46d.jpg" alt="Guilty Gear" class="w-full aspect-[2/3] object-cover">
+        <div class="p-3">
+          <h3 class="font-semibold text-sm truncate">Guilty Gear</h3>
+          <p class="text-xs text-gray-400">2023 • Fighting • 4.9★</p>
+        </div>
+      </div>
+
+            <div class="bg-slate-800 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl">
+        <img src="https://i.pinimg.com/736x/a0/bf/eb/a0bfebcc8b0532bfe616e66b709a04be.jpg" alt="Guilty Gear" class="w-full aspect-[2/3] object-cover">
+        <div class="p-3">
+          <h3 class="font-semibold text-sm truncate">Guilty Gear</h3>
+          <p class="text-xs text-gray-400">2023 • Fighting • 4.9★</p>
+        </div>
+      </div>
+            <div class="bg-slate-800 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl">
+        <img src="https://i.pinimg.com/736x/8b/13/f4/8b13f4cac6cb16009c9d3322c764a7f1.jpg" alt="Guilty Gear" class="w-full aspect-[2/3] object-cover">
         <div class="p-3">
           <h3 class="font-semibold text-sm truncate">Guilty Gear</h3>
           <p class="text-xs text-gray-400">2023 • Fighting • 4.9★</p>
@@ -295,36 +302,46 @@
       </div>
     </div>
 
+
     <nav class="flex justify-center mt-8" aria-label="Page navigation">
       <ul class="flex items-center -space-x-px">
         <li>
-          <a href="#" class="flex items-center justify-center w-10 h-10 ml-0 leading-tight text-gray-400 bg-slate-800 border border-slate-700 rounded-l-lg hover:bg-slate-700 hover:text-white">
+          <a href="#"
+            class="flex items-center justify-center w-10 h-10 ml-0 leading-tight text-gray-400 bg-slate-800 border border-slate-700 rounded-l-lg hover:bg-slate-700 hover:text-white">
             <span class="sr-only">Previous</span>
             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
             </svg>
           </a>
         </li>
         <li>
-          <a href="#" class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 hover:bg-slate-700 hover:text-white">1</a>
+          <a href="#"
+            class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 hover:bg-slate-700 hover:text-white">1</a>
         </li>
         <li>
-          <a href="#" class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 hover:bg-slate-700 hover:text-white">2</a>
+          <a href="#"
+            class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 hover:bg-slate-700 hover:text-white">2</a>
         </li>
         <li>
-          <a href="#" aria-current="page" class="flex items-center justify-center w-10 h-10 text-blue-600 border border-blue-600 bg-blue-900/20 hover:bg-blue-900/30">3</a>
+          <a href="#" aria-current="page"
+            class="flex items-center justify-center w-10 h-10 text-blue-600 border border-blue-600 bg-blue-900/20 hover:bg-blue-900/30">3</a>
         </li>
         <li>
-          <a href="#" class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 hover:bg-slate-700 hover:text-white">4</a>
+          <a href="#"
+            class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 hover:bg-slate-700 hover:text-white">4</a>
         </li>
         <li>
-          <a href="#" class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 hover:bg-slate-700 hover:text-white">5</a>
+          <a href="#"
+            class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 hover:bg-slate-700 hover:text-white">5</a>
         </li>
         <li>
-          <a href="#" class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 rounded-r-lg hover:bg-slate-700 hover:text-white">
+          <a href="#"
+            class="flex items-center justify-center w-10 h-10 leading-tight text-gray-400 bg-slate-800 border border-slate-700 rounded-r-lg hover:bg-slate-700 hover:text-white">
             <span class="sr-only">Next</span>
             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
             </svg>
           </a>
         </li>
@@ -334,25 +351,26 @@
   <script>
 
     document.documentElement.classList.add('dark');
-    
 
-    document.getElementById('sidebar-toggle').addEventListener('click', function() {
+
+    document.getElementById('sidebar-toggle').addEventListener('click', function () {
       const sidebar = document.getElementById('default-sidebar');
       sidebar.classList.toggle('-translate-x-full');
     });
-    
 
-    document.addEventListener('click', function(event) {
+
+    document.addEventListener('click', function (event) {
       const sidebar = document.getElementById('default-sidebar');
       const sidebarToggle = document.getElementById('sidebar-toggle');
-      
-      if (window.innerWidth < 1024 && 
-          !sidebar.contains(event.target) && 
-          !sidebarToggle.contains(event.target) &&
-          !sidebar.classList.contains('-translate-x-full')) {
+
+      if (window.innerWidth < 1024 &&
+        !sidebar.contains(event.target) &&
+        !sidebarToggle.contains(event.target) &&
+        !sidebar.classList.contains('-translate-x-full')) {
         sidebar.classList.add('-translate-x-full');
       }
     });
   </script>
 </body>
+
 </html>
